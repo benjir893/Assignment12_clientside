@@ -3,10 +3,10 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
     const navLinks = <>
-        <li className='px-2 text-lime-300 font-semibold'><Link>HOME</Link></li>
+        <li className='px-2 text-lime-300 font-semibold'><Link to={"/"}>HOME</Link></li>
         <li>
             <details className='px-2'>
-                <summary className=' text-lime-300 font-semibold'><Link>DEPARTMENTS</Link></summary>
+                <summary className=' text-lime-300 font-semibold'><Link to={"/department"}>DEPARTMENTS</Link></summary>
                 <ul className="p-2">
                     <li className='bg-blue-200 border border-solid border-b-2 rounded-xl'><Link>HEARTS SECTION</Link></li>
                     <li className='bg-blue-200 border border-solid border-b-2 rounded-xl'><Link>DIABETIC SECTION</Link></li>

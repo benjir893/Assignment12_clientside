@@ -1,0 +1,33 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36aaee",
+        "department": "Billing & Health Insurance",
+        "chairperson": "Dr. Jaed Alam Khan",
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c36aabb",
+        "department": "Diabetic Screening and Services",
+        "chairperson": "Dr. Shaju Khadem Umpa",
+        "image": "https://i.ibb.co/wY80Nj3/shaju.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c35eeff",
+        "department": "Cancer Screening",
+        "chairperson": "Dr. Hero Alam",
+        "image":"https://i.ibb.co/tqsN0X7/Hero-Alom.png"
+    },
+    {
+        "_id": "642c155b2c4774f05c26ffgg",
+        "department": "Neurology",
+        "chairperson": "Dr. Antu Jalil",
+        "image": "https://i.ibb.co/y5qCDSq/ananto.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c16ccdd",
+        "department": "General Patients",
+        "chairperson": "Dr. Serious Kanchon",
+        "image": "https://i.ibb.co/XFRjVTq/ilias.jpg"
+    }
+    
+]

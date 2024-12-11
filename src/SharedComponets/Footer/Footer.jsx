@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import { FaFacebookF, FaSquareYoutube, FaTwitter } from 'react-icons/fa6';
 const Footer = () => {
     return (
-        <div>
+        <div className='mt-10'>
             <footer className="footer bg-base-200 text-base-content p-10">
                 <nav>
                     <h6 className="footer-title">Services</h6>
@@ -12,6 +12,7 @@ const Footer = () => {
                     <a className="link link-hover">Diabetic Screening and Services</a>
                     <a className="link link-hover">Cancer Screening</a>
                     <a className="link link-hover">Neurology</a>
+                    <a className="link link-hover">General Patients</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Our Specialists</h6>
@@ -19,6 +20,7 @@ const Footer = () => {
                     <a className="link link-hover">Dr. Shaju Khadem Umpa</a>
                     <a className="link link-hover">Dr.Hero Alam</a>
                     <a className="link link-hover">Dr. Antu Jalil</a>
+                    <a className="link link-hover">Dr. Serious Kanchon</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Legal</h6>
