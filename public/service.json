@@ -28,6 +28,18 @@
         "department": "General Patients",
         "chairperson": "Dr. Serious Kanchon",
         "image": "https://i.ibb.co/XFRjVTq/ilias.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c06aadd",
+        "department": "Heart Section",
+        "chairperson": "Dr. Momtaz Chompakola",
+        "image": "https://i.ibb.co/3S8WQzZ/momtaz.jpg"
+    },
+    {
+        "_id": "642c155b2c4774f05c07aaqq",
+        "department": "Care Giver",
+        "chairperson": "Dr. Porimoni Mistikola",
+        "image": "https://i.ibb.co/7vtDdGh/porimoni.jpg"
     }
     
 ]
