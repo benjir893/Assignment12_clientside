@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png'
 
 const Navbar = () => {
+    
     const navLinks = <>
         <li className='px-2 text-lime-300 font-semibold'><Link to={"/"}>HOME</Link></li>
         <li>
@@ -22,7 +23,7 @@ const Navbar = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-black bg-opacity-20 fixed z-10 max-w-6xl mx-auto">
+            <div className="navbar bg-black bg-opacity-20 fixed z-10 lg:max-w-6xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -67,7 +68,7 @@ const Navbar = () => {
                     <Link><button className="btn text-lime-300 font-semibold border border-solid border-1 bg-transparent">MAKE APPOINTMENT</button></Link>
                 </div>
                 <div className="navbar-end">
-                    <Link><button className="btn text-lime-300 font-semibold border border-solid border-1 bg-transparent">LOGIN</button></Link>
+                    <Link to={'/login'}><button className="btn text-lime-300 font-semibold border border-solid border-1 bg-transparent">LOGIN</button></Link>
                 </div>
             </div>
         </div>
