@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Authentication/AuthProvider";
+import { FaUserDoctor } from "react-icons/fa6";
 
 const Navbar = () => {
   const { user, signout } = useContext(AuthContext);
@@ -102,10 +103,18 @@ const Navbar = () => {
               MAKE APPOINTMENT
             </button>
           </Link>
+          <button className="btn btn-xs rounded-full">
+            <FaUserDoctor />
+            <div className="badge badge-secondary">+</div>
+          </button>
         </div>
         <div className="navbar-end">
           <span className="text-lime-400">{user?.displayName}</span>
-          <img className="w-10 h-10 rounded-full px-1 py-1" src={user?.photoURL} alt="" />
+          <img
+            className="w-10 h-10 rounded-full px-1 py-1"
+            src={user?.photoURL}
+            alt=""
+          />
           {user ? (
             <>
               <Link>
