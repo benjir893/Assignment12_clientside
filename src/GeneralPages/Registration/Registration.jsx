@@ -2,21 +2,44 @@ import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Authentication/AuthProvider";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Registration = () => {
-    const {createUser} = useContext(AuthContext)
+  const { createUser, userProfileUpdate, googleLogin } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    createUser(data.email, data.password)
-    .then(userCredential =>{
-        const user = userCredential.user;
-        console.log(user)
-    })
-    console.log(data)};
+    console.log(data);
+    createUser(data.email, data.password).then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user);
+      userProfileUpdate(data.username, data.photourl)
+        .then(() => {
+          console.log("user profile updated");
+          reset();
+          navigate(from, { replace: true });
+        })
+        .catch((error) => console.error(error));
+    });
+  };
+  const handleGooglesignup = () => {
+    googleLogin()
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
   return (
     <>
       <Helmet>
@@ -37,6 +60,19 @@ const Registration = () => {
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
+                  <span>
+                    <button
+                      onClick={handleGooglesignup}
+                      className="btn btn-xs btn-ghost text-lime-500"
+                    >
+                      Using Google Login
+                    </button>
+                  </span>
+                  <span>
+                    <button className="btn btn-xs btn-ghost text-lime-500">
+                      Using Github Login
+                    </button>
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -49,6 +85,24 @@ const Registration = () => {
                   <p role="alert" className="text-red-600">
                     {" "}
                     name is required
+                  </p>
+                )}
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo</span>
+                </label>
+                <input
+                  type="text"
+                  {...register("photourl", { required: true })}
+                  placeholder="enter your Photo url"
+                  className="input input-bordered"
+                  //   required
+                />
+                {errors.photourl?.type === "required" && (
+                  <p role="alert" className="text-red-600">
+                    {" "}
+                    photo url is required
                   </p>
                 )}
               </div>
@@ -79,7 +133,8 @@ const Registration = () => {
                     required: true,
                     minLength: 6,
                     maxLength: 20,
-                    pattern: /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])(?!.*[:;])/,
+                    pattern:
+                      /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])(?!.*[:;])/,
                   })}
                   placeholder="password"
                   className="input input-bordered"

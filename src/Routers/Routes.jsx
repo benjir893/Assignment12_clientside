@@ -4,6 +4,8 @@ import Home from "../GeneralPages/Home/Home";
 import Department from "../GeneralPages/Department/Department";
 import Login from "../GeneralPages/Login/Login";
 import Registration from "../GeneralPages/Registration/Registration";
+import MakeAppointment from "../GeneralPages/MakeAppointment/MakeAppointment";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +27,10 @@ export const router = createBrowserRouter([
            {
             path:'registration',
             element:<Registration></Registration>
+           },
+           {
+             path:'makeappointment',
+             element:<PrivateRoute><MakeAppointment></MakeAppointment></PrivateRoute>
            }
         ]
     }

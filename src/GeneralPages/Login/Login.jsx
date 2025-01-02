@@ -1,39 +1,67 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplate,
-  LoadCanvasTemplateNoReload,
   validateCaptcha,
 } from "react-simple-captcha";
+import { AuthContext } from "../../Authentication/AuthProvider";
+import Swal from "sweetalert2";
 const Login = () => {
-  const captchaRef = useRef(null);
+  const {user, signIn } = useContext(AuthContext);
   const [disabled, setDisabled] = useState(true);
+  const location = useLocation()
+  const navigate = useNavigate();  
+  const from = location.state?.from?.pathname || "/";
+
   useEffect(() => {
     loadCaptchaEnginge(6);
   }, []);
 
-  const handlecaptchaValidate = () => {
-    const user_captcha_value = captchaRef.current.value;
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    signIn(email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        Swal.fire({
+          title: `you are currently logged in`,
+          showClass: {
+            popup: `
+                animate__animated
+                animate__fadeInUp
+                animate__faster
+              `,
+          },
+          hideClass: {
+            popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+              `,
+          },
+        });
+        navigate(from, {replace:true});
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const handlecaptchaValidate = (event) => {
+    const user_captcha_value = event.target.value;
     if (validateCaptcha(user_captcha_value)) {
       setDisabled(false);
     } else {
       setDisabled(true);
     }
   };
-  const handleLogin = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const email = form.email.value;
-    const password = form.password.value;
-    console.log(email, password);
-  };
   return (
     <>
-    <Helmet>
-    <title>Benjir|Login</title>
-    </Helmet>
+      <Helmet>
+        <title>Benjir|Login</title>
+      </Helmet>
       <div
         className="hero bg-base-200 min-h-screen"
         style={{
@@ -49,7 +77,11 @@ const Login = () => {
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
-                  <Link to={"/registration"}><span className="label-text text-lime-500 font-semibold">Yet to Register?</span></Link>
+                  <Link to={"/registration"}>
+                    <span className="label-text text-lime-500 font-semibold">
+                      Yet to Register?
+                    </span>
+                  </Link>
                 </label>
                 <input
                   type="email"
@@ -81,18 +113,12 @@ const Login = () => {
                   <LoadCanvasTemplate />
                 </label>
                 <input
+                  onBlur={handlecaptchaValidate}
                   type="text"
-                  ref={captchaRef}
                   placeholder="type the captcha above"
                   className="input input-bordered"
                   required
                 />
-                <button
-                  onClick={handlecaptchaValidate}
-                  className="btn btn-outline btn-accent btn-xs mt-2"
-                >
-                  validate
-                </button>
               </div>
               <div className="form-control mt-6">
                 <input
