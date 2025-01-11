@@ -12,7 +12,7 @@ const Department = () => {
                     Benjir|Department
                 </title>
             </Helmet>
-            <Cover image={coverpic}></Cover>
+            <Cover image={coverpic} title={"Our services"}></Cover>
             <Services></Services>
         </div>
     );

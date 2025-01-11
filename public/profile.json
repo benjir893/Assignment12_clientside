@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "contact": {
+        "phone": "+1-555-123-4567",
+        "email": "benjirbhuyan@gmail.com"
+      },
+      "address": {
+        "street": "123 Elm Street",
+        "city": "Springfield",
+        "state": "IL",
+        "zip_code": "62704"
+      },
+      "assigned_physician": {
+        "name": "Dr. Jane Smith",
+        "specialty": "Cardiology",
+        "contact_number": "+1-555-987-6543"
+      },
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "contact": {
+        "phone": "+1-555-234-5678",
+        "email": "jane.roe@example.com"
+      },
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip_code": "10118"
+      },
+      "assigned_physician": {
+        "name": "Dr. Robert Brown",
+        "specialty": "Pediatrics",
+        "contact_number": "+1-555-654-3210"
+      },
+      "status": "Inactive"
+    }
+  ]
+  

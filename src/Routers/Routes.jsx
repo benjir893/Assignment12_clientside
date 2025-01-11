@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             element:<Registration></Registration>
            },
            {
-             path:'makeappointment',
+             path:'makeappointment/:department',
              element:<PrivateRoute><MakeAppointment></MakeAppointment></PrivateRoute>
            }
         ]

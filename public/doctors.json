@@ -1,0 +1,193 @@
+[
+    {   "id": 1,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Sarah Johnson",
+        "specialty": "Cardiologist",
+        "department": "Cardiology",
+        "schedule": {
+            "monday": "9:00 AM - 1:00 PM",
+            "tuesday": "2:00 PM - 6:00 PM",
+            "wednesday": "9:00 AM - 1:00 PM",
+            "thursday": "2:00 PM - 6:00 PM",
+            "friday": "9:00 AM - 1:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Sarah Benson",
+        "specialty": "Cardiologist",
+        "department": "Cardiology",
+        "schedule": {
+            "monday": "9:00 AM - 1:00 PM",
+            "tuesday": "2:00 PM - 6:00 PM",
+            "wednesday": "9:00 AM - 1:00 PM",
+            "thursday": "2:00 PM - 6:00 PM",
+            "friday": "9:00 AM - 1:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Adam Johnson",
+        "specialty": "Cardiologist",
+        "department": "Cardiology",
+        "schedule": {
+            "monday": "9:00 AM - 1:00 PM",
+            "tuesday": "2:00 PM - 6:00 PM",
+            "wednesday": "9:00 AM - 1:00 PM",
+            "thursday": "2:00 PM - 6:00 PM",
+            "friday": "9:00 AM - 1:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Sarah Alam",
+        "specialty": "Cardiologist",
+        "department": "Cardiology",
+        "schedule": {
+            "monday": "9:00 AM - 1:00 PM",
+            "tuesday": "2:00 PM - 6:00 PM",
+            "wednesday": "9:00 AM - 1:00 PM",
+            "thursday": "2:00 PM - 6:00 PM",
+            "friday": "9:00 AM - 1:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Ahmed Khan",
+        "specialty": "Pediatrician",
+        "department": "Pediatrics",
+        "schedule": {
+            "monday": "10:00 AM - 4:00 PM",
+            "tuesday": "10:00 AM - 4:00 PM",
+            "wednesday": "10:00 AM - 4:00 PM",
+            "thursday": "10:00 AM - 4:00 PM",
+            "friday": "10:00 AM - 4:00 PM",
+            "saturday": "10:00 AM - 2:00 PM",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Emily Davis",
+        "specialty": "Dermatologist",
+        "department": "Dermatology",
+        "schedule": {
+            "monday": "1:00 PM - 5:00 PM",
+            "tuesday": "1:00 PM - 5:00 PM",
+            "wednesday": "1:00 PM - 5:00 PM",
+            "thursday": "1:00 PM - 5:00 PM",
+            "friday": "1:00 PM - 5:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Michael Brown",
+        "specialty": "Dermatologist",
+        "department": "Dermatology",
+        "schedule": {
+            "monday": "8:00 AM - 12:00 PM",
+            "tuesday": "8:00 AM - 12:00 PM",
+            "wednesday": "8:00 AM - 12:00 PM",
+            "thursday": "8:00 AM - 12:00 PM",
+            "friday": "8:00 AM - 12:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Hana Lee",
+        "specialty": "Dermatologist",
+        "department": "Dermatology",
+        "schedule": {
+            "monday": "2:00 PM - 6:00 PM",
+            "tuesday": "2:00 PM - 6:00 PM",
+            "wednesday": "2:00 PM - 6:00 PM",
+            "thursday": "2:00 PM - 6:00 PM",
+            "friday": "2:00 PM - 6:00 PM",
+            "saturday": "Off",
+            "sunday": "Off"
+        }
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Laila Noor",
+        "specialty": "Diabetic Specialist",
+        "department": "Endocrinology",
+        "schedule": {
+          "monday": "11:00 AM - 3:00 PM",
+          "tuesday": "11:00 AM - 3:00 PM",
+          "wednesday": "11:00 AM - 3:00 PM",
+          "thursday": "11:00 AM - 3:00 PM",
+          "friday": "11:00 AM - 3:00 PM",
+          "saturday": "Off",
+          "sunday": "Off"
+        }
+      },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Laila Wasim",
+        "specialty": "Diabetic Specialist",
+        "department": "Endocrinology",
+        "schedule": {
+          "monday": "11:00 AM - 3:00 PM",
+          "tuesday": "11:00 AM - 3:00 PM",
+          "wednesday": "11:00 AM - 3:00 PM",
+          "thursday": "11:00 AM - 3:00 PM",
+          "friday": "11:00 AM - 3:00 PM",
+          "saturday": "Off",
+          "sunday": "Off"
+        }
+      },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Wasim Noor",
+        "specialty": "Diabetic Specialist",
+        "department": "Endocrinology",
+        "schedule": {
+          "monday": "11:00 AM - 3:00 PM",
+          "tuesday": "11:00 AM - 3:00 PM",
+          "wednesday": "11:00 AM - 3:00 PM",
+          "thursday": "11:00 AM - 3:00 PM",
+          "friday": "11:00 AM - 3:00 PM",
+          "saturday": "Off",
+          "sunday": "Off"
+        }
+      },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/MD1nprp/jaed.jpg",
+        "name": "Dr. Alif Laila",
+        "specialty": "Diabetic Specialist",
+        "department": "Endocrinology",
+        "schedule": {
+          "monday": "11:00 AM - 3:00 PM",
+          "tuesday": "11:00 AM - 3:00 PM",
+          "wednesday": "11:00 AM - 3:00 PM",
+          "thursday": "11:00 AM - 3:00 PM",
+          "friday": "11:00 AM - 3:00 PM",
+          "saturday": "Off",
+          "sunday": "Off"
+        }
+      }
+]

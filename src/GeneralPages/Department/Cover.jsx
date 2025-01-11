@@ -2,7 +2,7 @@ import React from "react";
 import Subtitle from "../Banners/Subtitle";
 import { Parallax } from "react-parallax";
 
-const Cover = ({ image }) => {
+const Cover = ({ image, title }) => {
   return (
     <Parallax
       blur={{ min: -15, max: 15 }}
@@ -20,7 +20,7 @@ const Cover = ({ image }) => {
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-md">
             <Subtitle
-              title={"our services"}
+              title={title}
               subtitle={"We Never Compromise with Quality"}
             ></Subtitle>
           </div>

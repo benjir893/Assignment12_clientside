@@ -76,7 +76,7 @@ const Navbar = () => {
             >
               {navLinks}
             </ul>
-          </div>
+          </ div>
           <Link to={"/"}>
             <img src={logo} alt="logo" className="w-20 h-20 rounded-full"></img>
           </Link>
@@ -98,9 +98,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to={"/makeappointment"}>
+          <Link to={"/makeappointment/Cardiology"}>
             <button className="btn text-lime-300 font-semibold border border-solid border-1 bg-transparent">
-              MAKE APPOINTMENT
+              MY PROFILE
             </button>
           </Link>
           <button className="btn btn-xs rounded-full">
