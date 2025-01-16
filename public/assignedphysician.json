@@ -1,0 +1,23 @@
+[
+    {
+        "doctor's_name": "Dr. Emily Carter",
+        "specialty": "Cardiology",
+        "contact": "+1-555-123-4567",
+        "next_visit": "03-10-2025",
+        "assigned_status": "Assigned"
+    },
+    {
+        "doctor's_name": "Dr. Emily Carter",
+        "specialty": "Pediatrics",
+        "contact": "+1-555-123-4567",
+        "next_visit": "03-10-2025",
+        "assigned_status": "Assigned"
+    },
+    {
+        "doctor's_name": "Dr. Emily Carter",
+        "specialty": "Cardiology",
+        "contact": "+1-555-123-4567",
+        "next_visit": "03-10-2025",
+        "assigned_status": "Assigned"
+    }
+]
