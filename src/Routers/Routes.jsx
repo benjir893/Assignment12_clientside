@@ -8,6 +8,7 @@ import MakeAppointment from "../GeneralPages/MakeAppointment/MakeAppointment";
 import PrivateRoute from "./PrivateRoute";
 import AppointmentCart from "../GeneralPages/MakeAppointment/AppointmentCart";
 import AppointmentDetails from "../GeneralPages/MakeAppointment/AppointmentDetails";
+import Cart from "../GeneralPages/MakeAppointment/Cart";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
            {
             path:'/appointmentdetails',
             element:<PrivateRoute><AppointmentDetails></AppointmentDetails></PrivateRoute>
+           }
+           ,
+           {
+            path:'/appointmentcart',
+            element:<PrivateRoute><Cart></Cart></PrivateRoute>
            }
         ]
     }
