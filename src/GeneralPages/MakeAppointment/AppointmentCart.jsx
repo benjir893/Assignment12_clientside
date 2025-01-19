@@ -11,7 +11,7 @@ const AppointmentCart = () => {
     const currentphysician = selectphysicians.filter(item =>item.assigned_status === "current"); 
     
     return (
-        <div>
+        <div className='grid lg:grid-cols-2 justify-between'>
             {
                 currentphysician.map(item =><AppointmentCartDisplay key={item._id} item={item}></AppointmentCartDisplay>)   
             }

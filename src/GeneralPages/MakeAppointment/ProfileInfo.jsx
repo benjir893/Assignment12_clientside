@@ -21,7 +21,11 @@ const ProfileInfo = ({ item }) => {
               </address>
             </div>
             <div className="">
-              <p><span className="font-semibold">Currently Assigned Physician: </span></p>
+              <p>
+                <span className="font-semibold">
+                  Currently Assigned Physician:{" "}
+                </span>
+              </p>
               {/* <p>Name: {assigned_physician.name}</p>
               <p>Specialty: {assigned_physician.specialty}</p>
               <p>Contact: {assigned_physician.contact_number}</p>
@@ -29,11 +33,17 @@ const ProfileInfo = ({ item }) => {
               <AppointmentCart></AppointmentCart>
             </div>
             <div className="flex md:flex-col-2 gap-1">
-              <Link to={'/appointmentdetails'}><button className="btn btn-primary">Appointment Details</button></Link>
-              <Link to={'/appointmentcart'}><button className="btn btn-primary">Make an Appointment</button></Link>
+              <Link to={"/appointmentdetails"}>
+                <button className="btn btn-primary">Appointment Details</button>
+              </Link>
+              <Link to={"/appointmentcart"}>
+                <button className="btn btn-primary">Re-Visit</button>
+              </Link>
             </div>
           </div>
-          <p>Satatus: <span className="text-lime-500">{status}</span></p>
+          <p>
+            Satatus: <span className="text-lime-500">{status}</span>
+          </p>
         </>
       )}
     </div>
